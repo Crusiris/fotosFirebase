@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { AngularFirestore } from '@angular/fire/firestore'
 import * as firebase  from 'firebase';
+import { FileItem } from '../models/file-item';
 
 
 
@@ -9,6 +10,11 @@ import * as firebase  from 'firebase';
   providedIn: 'root'
 })
 export class CargaImagenesService {
+
+  saveFirebase( imagenes: FileItem[] ){
+
+    console.log( imagenes );
+  }
 
   private folder_images = 'img';
 
